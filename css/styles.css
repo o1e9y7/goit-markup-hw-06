@@ -147,7 +147,6 @@ img {
     line-height: 1.17;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    margin-right: 76px;
     }
 
 .logo-item {
@@ -244,32 +243,7 @@ img {
         0px 4px 4px 0px rgba(0, 0, 0, 0.15);
     }
 
-    .hero-section {
-    padding: 72px 0;
-    background: #2E2F42;
-    background-image:
-        linear-gradient(to bottom,
-            rgba(46, 47, 66, 0.7),
-            rgba(46, 47, 66, 0.7)),
-        url(../images/hero-img/mobile-dark-bg.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    max-width: 1440px;
-    margin: 0 auto;
-    }
-
-    @media screen and (min-resolution: 192dpi) and (max-width: 767px),
-    screen and (min-resolution: 2dppx) and (max-width: 767px),
-    screen and (min-device-pixel-ratio: 2) and (max-width: 767px) {
-    .hero-section {
-
-        background-image: linear-gradient(to bottom,
-                rgba(46, 47, 66, 0.7),
-                rgba(46, 47, 66, 0.7)),
-            url("../images/hero-img/mobile-dark-bg@2x.jpg");
-    }
-    }
+    
 
 
     /* ================================================================== */
@@ -308,7 +282,6 @@ img {
 
 
     .name-list-paragraph {
-    max-width: 288px;
     text-align: left;
     color: #434455;
     font-size: 16px;
@@ -446,7 +419,6 @@ img {
 
     .our-portfolio-item {
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    width: 296px;
     }
 
 
@@ -523,6 +495,7 @@ img {
     line-height: 1.5;
     letter-spacing: 0.02em;
     margin-bottom: 16px;
+    text-align: left;
     }
 
 
@@ -570,7 +543,7 @@ img {
     .footer-info-text {
         align-items: baseline;
         box-sizing: border-box;
-        margin-bottom: 72px;
+
     }
 
     
@@ -612,7 +585,6 @@ img {
 
     .footer-social-subscribe-input {
     margin-top: 16px;
-    min-width: 288px;
     height: 40px;
     border-radius: 4px;
     border: 1px solid #FFF;
@@ -954,6 +926,10 @@ img {
             padding-bottom: 17.5px;
         }
 
+.page-logo {
+    margin-right: 120px;
+}
+
   .padding-menu-link {
       display: block;
       color: #434455;
@@ -969,6 +945,36 @@ img {
   .accent-color {
     color: #4D5AE5;
 } 
+
+/* ============================MOBILE_HERRO====================================== */
+
+.hero-section {
+    padding: 72px 0;
+    background: #2E2F42;
+    background-image:
+        linear-gradient(to bottom,
+            rgba(46, 47, 66, 0.7),
+            rgba(46, 47, 66, 0.7)),
+        url(../images/hero-img/mobile-dark-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+@media screen and (min-resolution: 192dpi) and (max-width: 767px),
+screen and (min-resolution: 2dppx) and (max-width: 767px),
+screen and (min-device-pixel-ratio: 2) and (max-width: 767px) {
+    .hero-section {
+
+        background-image: linear-gradient(to bottom,
+                rgba(46, 47, 66, 0.7),
+                rgba(46, 47, 66, 0.7)),
+            url("../images/hero-img/mobile-dark-bg@2x.jpg");
+    }
+}
+/* ========================================================================== */
 
 .mobile-menu-open-btn {
     stroke: #2E2F42;
@@ -997,6 +1003,10 @@ img {
 
 }
 
+.our-portfolio-item {
+    width: 288px;
+}
+
 .page-mobile-addres {
     padding-top: 124px;
     margin-bottom: 24px;
@@ -1010,6 +1020,10 @@ img {
     max-width: 318px;
     padding: 72px 15px 40px 15px;
 }
+
+   .name-list-paragraph {
+       max-width: 288px;
+   }
 
 .mobile-menu-wrapper {
 
@@ -1068,6 +1082,10 @@ img {
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+  .footer-info-text {
+      margin-bottom: 72px;
+  }
+
 .footer-icon-paragraph {
     text-align: center;
 }
@@ -1097,19 +1115,15 @@ img {
     text-align: center;
 }
 
+.footer-social-subscribe-input {
+    min-width: 288px;
+}
 
 .modal {
     width: 288px;
     min-height: 623px;
 }
 
-/* .footer-icon {
-    margin-left: auto;
-    margin-right: auto; */
-    /* box-sizing: border-box; */
-/* .page-logo-footer {
-        text-align: center;
-} */
 
 }
 
@@ -1120,7 +1134,7 @@ img {
 
 @media screen and (min-width:768px) {
     .container {
-        max-width: 768px;
+        max-width: 736px;
         margin-left: auto;
         margin-right: auto;
         padding-left: 16px;
@@ -1130,6 +1144,10 @@ img {
 /* ===================== TABLET-HEAD-SECTION ======================== */
 /* ================================================================== */
 
+
+.page-logo {
+    margin-right: 120px;
+}
 
 .page-addres {
     padding-top: 16px;
@@ -1142,7 +1160,6 @@ img {
  }
 .page-nav {
     width: 736px;
-    gap: 40px;
     align-items: center;
     display: flex;
 }
@@ -1176,12 +1193,48 @@ img {
 
 /* ===================== TABLET-HERO-SECTION ======================= */
 /* ================================================================== */
+/* ============================TABLET_HERRO====================================== */
 
+.hero-section {
+    padding: 72px 0;
+    background: #2E2F42;
+    background-image:
+        linear-gradient(to bottom,
+            rgba(46, 47, 66, 0.7),
+            rgba(46, 47, 66, 0.7)),
+        url(../images/hero-img/tablet-dark-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+@media screen and (min-resolution: 192dpi) and (max-width: 767px),
+screen and (min-resolution: 2dppx) and (max-width: 767px),
+screen and (min-device-pixel-ratio: 2) and (max-width: 767px) {
+    .hero-section {
+
+        background-image: linear-gradient(to bottom,
+                rgba(46, 47, 66, 0.7),
+                rgba(46, 47, 66, 0.7)),
+            url("../images/hero-img/tablet-dark-bg@2x.jpg");
+    }
+}
+
+/* ========================================================================== */
 
 .title {
+    margin-bottom: 36px;
+    font-size: 56px;
+    /* font-style: normal; */
+    text-transform: capitalize;
+    font-weight: 700;
+    line-height: 1.07;
     height: 120px;
     max-width: 496px;
-    margin-bottom: 36px;
+    margin: auto;
+    margin-bottom: 48px;
 }
 
 
@@ -1203,6 +1256,7 @@ img {
 
 
 .name-list-paragraph {
+    max-width: 288px;
     text-align: left;
 }
 
@@ -1212,6 +1266,13 @@ img {
 
 /* ================================================================== */
 /* ==================== /TABLET-ADVANTEG-SECTION ==================== */
+
+
+
+.our-portfolio-item {
+    width: 288px;
+}
+
 
 /* ------------------------------------------------------------------ */
 
@@ -1244,15 +1305,22 @@ img {
 
 /* ======================== FOOTER-SECTION ========================== */
 /* ================================================================== */
+.footer-section {
+    gap: unset;
+    display: flex;
+    /* justify-content: center; */
+}
+
 .page-logo-footer {
     display: inline-block;
-        margin-bottom: 17.5px;
+    margin-bottom: 17.5px;
 }
 .footer-info {
-
     display: wrap;
-        width: 584px;
+}
 
+.footer-info-text {
+    margin-bottom: 72px;
 }
 
 .footer-paragraph {
@@ -1260,10 +1328,8 @@ img {
 }
 
 .footer-icon {
-            display: flex;
-            flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
 }
 
 .footer-social-subscribe {
@@ -1271,27 +1337,19 @@ img {
     
 }
 
-.footer-social-list {
-    /* display: flex;
-        justify-content: center;
-        gap: 16px;
-        margin-top: 8px; */
-    
-}
+
 
 .footer-social-subscribe-section {
         display: flex;
         flex-direction: row;
         justify-content: flex-start;
         align-items: center;
-        column-gap: 24px;
 }
 
 .footer-info-div {
     display: flex;
     flex-direction: row;
-    column-gap: 24px;
-    margin-bottom: 72px;
+   
 }
 
 
@@ -1303,6 +1361,10 @@ img {
 .footer-social-list {
         display: flex;
             gap: 16px;
+}
+
+.footer-social-subscribe-input {
+    min-width: 264px;
 }
 
 /* ================================================================== */
@@ -1318,15 +1380,150 @@ img {
 
 }
 
+
+
+@media screen and (min-width:1160px) {
+    .container {
+        max-width: 1160px;
+        padding-left: 15px;
+        padding-right: 15px;
+        margin-left: auto;
+        margin-right: auto;
+
+    }
 /* ===================== DESKTOP-HEAD-SECTION ======================= */
 /* ================================================================== */
 
-@media screen and (mim-width:1160px) {
-    .container {
-        max-width: 1128px;
+.contact-link {
+    gap: 40px;
+    display: flex;
+}
 
-    }
+.page-addres {
+
+}
+
+.padding-link {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    font-style: normal;
 }
 
 /* ================================================================== */
 /* ===================== /DESKTOP-HEAD-SECTION ====================== */
+
+.our-team-item {
+    width: calc((100% - 72px) / 4);
+}
+
+
+.our-portfolio-section {
+    padding: 120px 0 120px 0;
+}
+
+
+/* ============================MOBILE_HERRO====================================== */
+
+.hero-section {
+    padding: 72px 0;
+    background: #2E2F42;
+    background-image:
+        linear-gradient(to bottom,
+            rgba(46, 47, 66, 0.7),
+            rgba(46, 47, 66, 0.7)),
+        url(../images/hero-img/people-office1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+@media screen and (min-resolution: 192dpi) and (max-width: 767px),
+screen and (min-resolution: 2dppx) and (max-width: 767px),
+screen and (min-device-pixel-ratio: 2) and (max-width: 767px) {
+    .hero-section {
+
+        background-image: linear-gradient(to bottom,
+                rgba(46, 47, 66, 0.7),
+                rgba(46, 47, 66, 0.7)),
+            url("../images/hero-img/people-office1@2x.jpg");
+    }
+}
+
+/* ========================================================================== */
+
+
+/* ===========================ADVANTEG======================================= */
+
+.icon-advantage-item {
+    display: block;
+}
+
+.icon-advantage-item {
+    display: flex;
+    height: 112px;
+    border-radius: 4px;
+    border: 1px solid #8E8F99;
+    background: #F4F4FD;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+
+.name-list-item {
+    margin-bottom: 8px;
+    text-align: left;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.2;
+    letter-sipacng: 0.02em;
+
+}
+
+.name-list-paragraph{
+    width: 264px;
+    text-align: left;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+}
+
+.advantage {
+    flex-wrap: nowrap;
+}
+
+.advantage-item {
+    width: calc((100%-72px) /4);
+
+}
+
+
+/* ================================================================== */
+
+.footer-icon {
+margin-right: 80px;
+}
+
+
+.footer-info {
+    display: flex;
+    gap: unset;
+    justify-content: center;
+}
+
+.footer-social-subscribe-input {
+    min-width: 264px;
+}
+
+}
+
+
+
+
+
