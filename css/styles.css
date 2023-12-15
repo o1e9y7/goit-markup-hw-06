@@ -158,6 +158,34 @@ img {
     /* ===================== /MOBILE-HEAD-SECTION ===================== */
 
 
+.hero-section {
+    background: #2E2F42;
+    background-image:
+        linear-gradient(to bottom,
+            rgba(46, 47, 66, 0.7),
+            rgba(46, 47, 66, 0.7)),
+        url(../images/hero-img/mobile-dark-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+@media screen and (min-resolution: 192dpi) and (max-width: 767px),
+screen and (min-resolution: 2dppx) and (max-width: 767px),
+screen and (min-device-pixel-ratio: 2) and (max-width: 767px) {
+    .hero-section {
+
+        background-image: linear-gradient(to bottom,
+                rgba(46, 47, 66, 0.7),
+                rgba(46, 47, 66, 0.7)),
+            url("../images/hero-img/mobile-dark-bg@2x.jpg");
+    }
+}
+
+
+
     .contact-menu-link-item {
     padding-bottom: 24px;
     }
@@ -950,17 +978,6 @@ img {
 
 .hero-section {
     padding: 72px 0;
-    background: #2E2F42;
-    background-image:
-        linear-gradient(to bottom,
-            rgba(46, 47, 66, 0.7),
-            rgba(46, 47, 66, 0.7)),
-        url(../images/hero-img/mobile-dark-bg.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    max-width: 1440px;
-    margin: 0 auto;
 }
 
 @media screen and (min-resolution: 192dpi) and (max-width: 767px),
@@ -1086,6 +1103,9 @@ screen and (min-device-pixel-ratio: 2) and (max-width: 767px) {
       margin-bottom: 72px;
   }
 
+        .footer-paragraph {
+            width: 264px;
+        }
 .footer-icon-paragraph {
     text-align: center;
 }
@@ -1134,7 +1154,7 @@ screen and (min-device-pixel-ratio: 2) and (max-width: 767px) {
 
 @media screen and (min-width:768px) {
     .container {
-        max-width: 736px;
+        max-width: 768px;
         margin-left: auto;
         margin-right: auto;
         padding-left: 16px;
@@ -1196,18 +1216,13 @@ screen and (min-device-pixel-ratio: 2) and (max-width: 767px) {
 /* ============================TABLET_HERRO====================================== */
 
 .hero-section {
-    padding: 72px 0;
-    background: #2E2F42;
+    padding: 112px 0;
     background-image:
         linear-gradient(to bottom,
             rgba(46, 47, 66, 0.7),
             rgba(46, 47, 66, 0.7)),
         url(../images/hero-img/tablet-dark-bg.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    max-width: 1440px;
-    margin: 0 auto;
+
 }
 
 @media screen and (min-resolution: 192dpi) and (max-width: 767px),
@@ -1256,7 +1271,7 @@ screen and (min-device-pixel-ratio: 2) and (max-width: 767px) {
 
 
 .name-list-paragraph {
-    max-width: 288px;
+    max-width: 356px;
     text-align: left;
 }
 
@@ -1270,7 +1285,7 @@ screen and (min-device-pixel-ratio: 2) and (max-width: 767px) {
 
 
 .our-portfolio-item {
-    width: 288px;
+    width: 356px;
 }
 
 
@@ -1320,7 +1335,10 @@ screen and (min-device-pixel-ratio: 2) and (max-width: 767px) {
 }
 
 .footer-info-text {
+    margin-right: 24px;
     margin-bottom: 72px;
+    width: 264px;
+
 }
 
 .footer-paragraph {
@@ -1427,18 +1445,14 @@ screen and (min-device-pixel-ratio: 2) and (max-width: 767px) {
 /* ============================MOBILE_HERRO====================================== */
 
 .hero-section {
-    padding: 72px 0;
+    padding: 188px 0;
     background: #2E2F42;
     background-image:
         linear-gradient(to bottom,
             rgba(46, 47, 66, 0.7),
             rgba(46, 47, 66, 0.7)),
         url(../images/hero-img/people-office1.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    max-width: 1440px;
-    margin: 0 auto;
+
 }
 
 @media screen and (min-resolution: 192dpi) and (max-width: 767px),
@@ -1509,7 +1523,9 @@ screen and (min-device-pixel-ratio: 2) and (max-width: 767px) {
 .footer-icon {
 margin-right: 80px;
 }
-
+.footer-info-text {
+    margin-right: 120px;
+}
 
 .footer-info {
     display: flex;
