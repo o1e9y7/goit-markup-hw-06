@@ -994,7 +994,7 @@ screen and (min-device-pixel-ratio: 2) and (max-width: 767px) {
 /* ========================================================================== */
 
 .mobile-menu-open-btn {
-    stroke: #2E2F42;
+    fill: #2E2F42;
     background-color: transparent;
     padding: 0;
     line-height: 0;
