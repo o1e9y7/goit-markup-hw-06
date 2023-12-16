@@ -159,7 +159,7 @@ img {
 
 
 .hero-section {
-    background: #2E2F42;
+    background-color: #2E2F42;
     background-image:
         linear-gradient(to bottom,
             rgba(46, 47, 66, 0.7),
@@ -369,10 +369,7 @@ ul li .accent-color {
     padding: 32px 0;
     }
 
-    .our-team {
-    align-items: center;
-    display: column;
-    }
+ 
 
     .our-team-item {
     width: 264px;
@@ -1018,9 +1015,15 @@ screen and (min-device-pixel-ratio: 2) and (max-width: 767px) {
 
 /* Our-team */
 
+.our-team {
+    display: flex;
+    flex-direction: column;
+    gap: 72px;
+    margin: 0 auto;
+}
+
 .our-team-section {
-    padding-top: 96px;
-    padding-bottom: 96px;
+    padding: 96px 0 96px 0;
 }
 
 .our-team-container {
@@ -1147,7 +1150,10 @@ screen and (min-device-pixel-ratio: 2) and (max-width: 767px) {
 
 
 
-
+.footer-info-text {
+    text-align: center;
+    margin-bottom: 72px;
+}
 
 .fotter-social-subscribe-section {
         display: flex;
@@ -1164,7 +1170,7 @@ screen and (min-device-pixel-ratio: 2) and (max-width: 767px) {
 
 .footer-paragraph {
     width: 264px;
-    margin-bottom: 72px;
+   
     }
 
 
@@ -1249,10 +1255,12 @@ screen and (min-device-pixel-ratio: 2) and (max-width: 767px) {
 
 .about-us-section {
     display: flex;
-    padding: 96px 16px 96px 16px;
+    padding: 96px 0 96px 0;
 }
 
-
+.our-team-section {
+    padding: 96px 0 96px 0;
+}
 
 .page-nav {
     width: 736px;
@@ -1535,7 +1543,6 @@ screen and (min-device-pixel-ratio: 2) and (min-width: 768px) {
 
 .hero-section {
     padding: 188px 0;
-    background: #2E2F42;
     background-image:
         linear-gradient(to bottom,
             rgba(46, 47, 66, 0.7),
@@ -1563,7 +1570,7 @@ screen and (min-device-pixel-ratio: 2) and (min-width:1158px) {
 
 .about-us-section {
     display: flex;
-    padding: 120px 16px 120px 16px;
+    padding: 120px 0 120px 0;
 }
 
 .icon-advantage-item {
@@ -1614,10 +1621,7 @@ screen and (min-device-pixel-ratio: 2) and (min-width:1158px) {
 
 
 
-.our-team-section {
-    padding-top: 120px;
-    padding-bottom: 120px;
-}
+
 
 /* ================================================================== */
 
@@ -1657,6 +1661,13 @@ margin-right: 80px;
 
 .footer-social-block {
     display: block;
+}
+
+.footer-social-subscribe-section {
+    display: flex;
+    /* flex-direction: row;
+    justify-content: flex-start;
+    align-items: center; */
 }
 
 }
