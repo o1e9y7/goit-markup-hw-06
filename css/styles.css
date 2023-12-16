@@ -1164,7 +1164,7 @@ screen and (min-device-pixel-ratio: 2) and (max-width: 767px) {
 
 .footer-paragraph {
     width: 264px;
-    margin-bottom: 16px;
+    margin-bottom: 72px;
     }
 
 
@@ -1190,7 +1190,7 @@ screen and (min-device-pixel-ratio: 2) and (max-width: 767px) {
 
   }
 
-  .footer-icon {
+.footer-icon {
     margin-bottom: 72px;
   }
 
