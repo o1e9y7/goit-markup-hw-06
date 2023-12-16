@@ -227,6 +227,10 @@ screen and (min-device-pixel-ratio: 2) and (max-width: 767px) {
     color: #4D5AE5;
     }
 
+
+ul li .accent-color {
+              color: #4D5AE5;
+          }
     /* ====================== MOBILE-HERO-SECTION ======================= */
     /* ================================================================== */
     .title {
@@ -279,23 +283,21 @@ screen and (min-device-pixel-ratio: 2) and (max-width: 767px) {
 
 
 
-    /* ============================ADVANTAGE============================ */
+    /* ============================MOBILE-ADVANTAGE============================ */
     /* ================================================================= */
     .icon-advantage-item {
     display: none;
     }
 
     .advantage {
-    padding-top: 96px;
+
     justify-content: center;
     display: column;
 
     }
 
 
-    .advantage-item {
-        margin-bottom: 72px;
-    }
+
 
     .name-list-item {
     margin-bottom: 8px;
@@ -535,10 +537,11 @@ screen and (min-device-pixel-ratio: 2) and (max-width: 767px) {
     }
 
 
-    .footer-section {
-    background: #2E2F42;
-    padding: 96px 0;
-    }
+.footer-section {
+        background-color: #2E2F42;
+        display: flex;
+        margin: 0 auto;
+}
 
 
 
@@ -898,10 +901,7 @@ screen and (min-device-pixel-ratio: 2) and (max-width: 767px) {
     letter-spacing: 0.04em;
     }
 
-    .accent-color {
-    color: #4D5AE5;
-    text-decoration: none;
-    }
+
 
     .review-form-submit-button {
     border-radius: 4px;
@@ -940,7 +940,7 @@ screen and (min-device-pixel-ratio: 2) and (max-width: 767px) {
 @media screen and (max-width:767px) {
 
     .container {
-        max-width: 320px;
+        max-width: 767px;
         padding-left: 16px;
         padding-right: 16px;
         margin-right: auto;
@@ -970,9 +970,6 @@ screen and (min-device-pixel-ratio: 2) and (max-width: 767px) {
       transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 
-  .accent-color {
-    color: #4D5AE5;
-} 
 
 /* ============================MOBILE_HERRO====================================== */
 
@@ -993,6 +990,11 @@ screen and (min-device-pixel-ratio: 2) and (max-width: 767px) {
 }
 /* ========================================================================== */
 
+.about-us-section {
+    display: flex;
+    padding: 96px 0 96px 0;
+}
+
 .mobile-menu-open-btn {
     fill: #2E2F42;
     background-color: transparent;
@@ -1010,9 +1012,19 @@ screen and (min-device-pixel-ratio: 2) and (max-width: 767px) {
     display: none;
 
 }
+
+.advantage-item:not(:last-child) {
+    margin-bottom: 72px;
+
+  
+}
  
 
 /* Our-team */
+
+.our-team-container {
+    width: 296px;
+}
 
 .our-team-item{
     margin-top: 72px;
@@ -1024,17 +1036,42 @@ screen and (min-device-pixel-ratio: 2) and (max-width: 767px) {
 }
 
 .page-mobile-addres {
-    padding-top: 124px;
+mobile-menu-contact-div */
     margin-bottom: 24px;
     font-style:normal;
 }
+/*  */
+.mobile-menu-list {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.contact-menu-link-item {
+        display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+}
+
+.mobile-menu-contact-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    }
+
+
+
+
+/*  */
+
 
 .mobile-menu-container {
-    position: relative;
-    margin-top: auto;
-    height: 100%;
-    max-width: 318px;
-    padding: 72px 15px 40px 15px;
+    padding: 72px 16px 40px 16px;
+    display: flex;
+    margin-left: 0;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
    .name-list-paragraph {
@@ -1043,6 +1080,19 @@ screen and (min-device-pixel-ratio: 2) and (max-width: 767px) {
 
 .mobile-menu-wrapper {
 
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 9999999999;
+        background-color: #fff;
+        transform: translateX(100%);
+        display: flex;
+
+/*     
+    padding: 72px 16px 40px 16px;
+    display: flex;
     position: fixed;
     top: 0;
     left: 0;
@@ -1052,7 +1102,7 @@ screen and (min-device-pixel-ratio: 2) and (max-width: 767px) {
     background-color: #FFF;
     transform: translateX(100%);
     transition:
-    transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transform 250ms cubic-bezier(0.4, 0, 0.2, 1); */
 
 }
 
@@ -1065,17 +1115,18 @@ screen and (min-device-pixel-ratio: 2) and (max-width: 767px) {
     position: absolute;
     top: 24px;
     right: 24px;
-    background-color: transparent;
     width: 24px;
     height: 24px;
     stroke-width: 1px;
     stroke: #2E2F42;
-    border-color: #E7E9FC;
     border-radius: 50%;
     border: none;
+    background-color: transparent;
+    border-color: #E7E9FC;
     border: 1px solid rgba(0, 0, 0, 0.1);
     padding: 0;
     line-height: 0;
+    cursor: pointer;
 }
 
 .mobile-menu-close-btn:hover,
@@ -1094,39 +1145,69 @@ screen and (min-device-pixel-ratio: 2) and (max-width: 767px) {
     line-height: 1.11;
     letter-spacing: 0.02em;
     text-transform: capitalize;
-    padding-bottom: 40px;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+
+
+
+
+/* .mobile-menu-item {
+    margin-bottom: 40px;
+} */
+.fotter-social-subscribe-section {
+        display: flex;
+            flex-direction: column;
+            align-items: center;
+}
+
+
+.footer-section {
+    padding: 96px 0;
 }
 
   .footer-info-text {
       margin-bottom: 72px;
   }
 
-        .footer-paragraph {
-            width: 264px;
-        }
+.footer-paragraph {
+    width: 264px;
+    margin-bottom: 0;
+    }
+
+
 .footer-icon-paragraph {
     text-align: center;
 }
 
  .footer-info {
-     text-align: center;
-     display: flex;
-     flex-direction: column;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
  }
 
 .fotter-social-subscribe-paragraph {
     text-align: center;
 }
 
-  .footer-social-list {
-      margin-bottom: 72px;
+.footer-social-list {
       display: flex;
       justify-content: center;
       gap: 16px;
       margin-top: 16px;
 
   }
+
+  .footer-icon {
+    margin-bottom: 72px;
+  }
+
+.footer-social-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 
 
 .footer-social-subscribe {
@@ -1173,6 +1254,12 @@ screen and (min-device-pixel-ratio: 2) and (max-width: 767px) {
 
 }
 
+.about-us-section {
+    display: flex;
+    padding: 96px 16px 96px 16px;
+}
+
+
  .our-team-item {
      margin-top: 72px;
 
@@ -1187,6 +1274,8 @@ screen and (min-device-pixel-ratio: 2) and (max-width: 767px) {
     gap: 40px;
     display: flex;
 }
+
+
 
 .mobile-menu-open-btn {
     display: none;
@@ -1255,6 +1344,8 @@ screen and (min-device-pixel-ratio: 2) and (max-width: 767px) {
 /* ================================================================== */
 /* ===================== /TABLET-HERO-SECTION ======================= */
 
+
+
 /* ------------------------------------------------------------------ */
 
 /* ===================== TABLET-ADVANTEG-SECTION ==================== */
@@ -1320,6 +1411,7 @@ screen and (min-device-pixel-ratio: 2) and (max-width: 767px) {
 /* ======================== FOOTER-SECTION ========================== */
 /* ================================================================== */
 .footer-section {
+    padding: 98px 0 96px 0;
     gap: unset;
     display: flex;
     /* justify-content: center; */
@@ -1399,9 +1491,9 @@ screen and (min-device-pixel-ratio: 2) and (max-width: 767px) {
 
 
 
-@media screen and (min-width:1160px) {
+@media screen and (min-width:1158px) {
     .container {
-        max-width: 1160px;
+        max-width: 1158px;
         padding-left: 15px;
         padding-right: 15px;
         margin-left: auto;
@@ -1536,8 +1628,11 @@ margin-right: 80px;
     min-width: 264px;
 }
 
+.footer-social-subscribe-div {
+    display: flex;
 }
 
+}
 
 
 
