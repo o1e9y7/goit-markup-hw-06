@@ -412,17 +412,15 @@ ul li .accent-color {
     /* ====================== MOBILE-PORTFOLIO-SECTION ======================*/
     /* ================================================================== */
   .our-portfolio {
+    justify-content: center;
       display: flex;
       flex-wrap: wrap;
       column-gap: 24px;
-      row-gap: 48px;
+      row-gap: 48px; 
       box-shadow: #2E2F42 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 
-    .our-portfolio-section {
-    padding: 96px 0 96px 0;
-    text-transform: capitalize;
-    }
+   
 
 
 
@@ -445,11 +443,11 @@ ul li .accent-color {
     }
 
     .our-portfolio {
-    justify-content: center;
-    display: column;
-    column-gap: 24px;
-    flex-wrap: wrap;
-    row-gap: 48px;
+    /* justify-content: center; */
+
+    /* column-gap: 24px; */
+    /* flex-wrap: wrap; */
+    /* row-gap: 48px; */
     }
 
 
@@ -509,7 +507,7 @@ ul li .accent-color {
 
 
 
-    .footer-logo-item {
+.footer-logo-item {
     color: #F4F4FD;
 
     }
@@ -517,8 +515,6 @@ ul li .accent-color {
 
 .footer-section {
         background-color: #2E2F42;
-        display: flex;
-        margin: 0 auto;
 }
 
 
@@ -559,7 +555,6 @@ ul li .accent-color {
   
 
     .footer-socisl-list-item {
-
     width: 40px;
     height: 40px;
 
@@ -586,7 +581,6 @@ ul li .accent-color {
     }
 
     .footer-social-subscribe-button-icon {
-    margin-left: 16px;
     fill: #FFFFFF;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
@@ -741,7 +735,7 @@ ul li .accent-color {
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    width: 256px;
+    /* width: 256px; */
     margin-bottom: 16px;
     }
 
@@ -1015,6 +1009,10 @@ screen and (min-device-pixel-ratio: 2) and (max-width: 767px) {
 }
 
 
+ .our-portfolio-section {
+     padding: 96px 0 96px 0;
+     /* text-transform: capitalize; */
+ }
 
 .our-portfolio-item {
     width: 288px;
@@ -1225,6 +1223,10 @@ screen and (min-device-pixel-ratio: 2) and (max-width: 767px) {
 .our-team-section {
     padding: 96px 0 96px 0;
 }
+
+ .our-portfolio-section {
+     padding: 96px 0 96px 0;
+ }
 
 .page-nav {
     width: 736px;
